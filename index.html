@@ -1,13 +1,271 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Admin Dashboard</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    
-</body>
+    <link rel="stylesheet" href="style.css" />
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;1,100;1,300;1,400;1,500&display=swap");
+    </style>
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="dashboard">
+        <div class="top">
+          <img src="icons/icon.svg" alt="Icon of a dashboard" />
+          <p>Dashboard</p>
+        </div>
+        <ul class="mid">
+          <li>
+            <div>
+              <img src="icons/home.svg" alt="Icon of a house" />
+              <p>Home</p>
+            </div>
+          </li>
+          <li>
+            <div>
+              <img src="icons/account.svg" alt="Icon of a person" />
+              <p>Profile</p>
+            </div>
+          </li>
+          <li>
+            <div>
+              <img src="icons/messages.svg" alt="Icon of a message" />
+              <p>Messages</p>
+            </div>
+          </li>
+          <li>
+            <div>
+              <img src="icons/history.svg" alt="Icon of a house" />
+              <p>History</p>
+            </div>
+          </li>
+          <li>
+            <div>
+              <img src="icons/tasks.svg" alt="Icon of a house" />
+              <p>Tasks</p>
+            </div>
+          </li>
+          <li>
+            <div>
+              <img src="icons/communities.svg" alt="Icon of a house" />
+              <p>Communities</p>
+            </div>
+          </li>
+        </ul>
+        <ul class="bot">
+          <li>
+            <div>
+              <img src="icons/settings.svg" alt="Icon of a cog wheel" />
+              <p>Settings</p>
+            </div>
+          </li>
+          <li>
+            <div>
+              <img src="icons/support.svg" alt="Icon of a question mark" />
+              <p>Questions</p>
+            </div>
+          </li>
+          <li>
+            <div>
+              <img
+                src="icons/privacy.svg"
+                alt="Icon of a check mark in a shield"
+              />
+              <p>Privacy</p>
+            </div>
+          </li>
+        </ul>
+      </div>
+      <div class="right-side-container">
+        <div class="header">
+          <div class="search-bar">
+            <img src="icons/search.svg" alt="Magnifying glass icon" />
+            <input type="text" />
+          </div>
+          <div class="greeting">
+            <img src="shiba-inu.jpg" alt="picture of a dog" />
+            <p>
+              Hi there, <br />
+              <strong>Morgan Oakley (@morgan)</strong>
+            </p>
+          </div>
+          <div class="profile">
+            <img src="icons/notification.svg" alt="Icon of a bell" id="bell" />
+            <img
+              src="shiba-inu.jpg"
+              alt="Smaller picture of a dog"
+              id="profilePicture"
+            />
+            <p>Morgan Oakley</p>
+          </div>
+          <div class="buttons">
+            <button>New</button>
+            <button>Upload</button>
+            <button>Share</button>
+          </div>
+        </div>
+        <div class="main">
+          <div class="main-text">
+            <p class="yp-text">Your projects</p>
+            <p class="announcements-text">Announcements</p>
+          </div>
+          <div class="cards">
+            <div class="card">
+              <p class="card_title">Etch-a-Sketch</p>
+              <p class="card_content">
+                An Etch-a-Sketch game following a course in The Odin Project.
+                Created using HTML, CSS and JS.
+              </p>
+              <div class="card_buttons">
+                <a href="https://c0untyy.github.io/etch-a-sketch/"
+                  ><img src="/icons/eye-plus-outline.svg"
+                /></a>
+                <a href="https://github.com/c0untyy/etch-a-sketch"
+                  ><img src="/icons/github.svg"
+                /></a>
+                <a href="/"><img src="/icons/share-variant-outline.svg" /></a>
+              </div>
+            </div>
+            <div class="card">
+              <p class="card_title">Sign-Up Form</p>
+              <p class="card_content">
+                Sign-Up Form styled after a form in The Odin Project tutorial.
+                Made using HTML and CSS.
+              </p>
+              <div class="card_buttons">
+                <a href="https://c0untyy.github.io/sign-up-form/"
+                  ><img src="/icons/eye-plus-outline.svg"
+                /></a>
+                <a href="https://github.com/c0untyy/sign-up-form"
+                  ><img src="/icons/github.svg"
+                /></a>
+                <a href="/"><img src="/icons/share-variant-outline.svg" /></a>
+              </div>
+            </div>
+            <div class="card">
+              <p class="card_title">Calculator</p>
+              <p class="card_content">
+                A calculator for a course in the Odin Project. Made in HTML, CSS
+                and JS.
+              </p>
+              <div class="card_buttons">
+                <a href="https://c0untyy.github.io/calculator/"
+                  ><img src="/icons/eye-plus-outline.svg"
+                /></a>
+                <a href="https://github.com/c0untyy/calculator"
+                  ><img src="/icons/github.svg"
+                /></a>
+                <a href="/"><img src="/icons/share-variant-outline.svg" /></a>
+              </div>
+            </div>
+            <div class="card">
+              <p class="card_title">Rock Paper Scissors</p>
+              <p class="card_content">
+                A rock paper scissors game following a course in The Odin
+                Project.. Created using HTML, CSS and JS.
+              </p>
+              <div class="card_buttons">
+                <a href="https://c0untyy.github.io/rock-paper-scissors/"
+                  ><img src="/icons/eye-plus-outline.svg"
+                /></a>
+                <a href="https://github.com/c0untyy/rock-paper-scissors"
+                  ><img src="/icons/github.svg"
+                /></a>
+                <a href="/"><img src="/icons/share-variant-outline.svg" /></a>
+              </div>
+            </div>
+            <div class="card">
+              <p class="card_title">Very Cool Project</p>
+              <p class="card_content">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Cupiditate maiores architecto aperiam quis sunt numquam cum
+                earum voluptas illo sapiente.
+              </p>
+              <div class="card_buttons">
+                <a href="/"><img src="/icons/eye-plus-outline.svg" /></a>
+                <a href="/"><img src="/icons/github.svg" /></a>
+                <a href="/"><img src="/icons/share-variant-outline.svg" /></a>
+              </div>
+            </div>
+            <div class="card">
+              <p class="card_title">Crazy Project</p>
+              <p class="card_content">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                Aliquam consectetur laboriosam vel quas nostrum quae nisi unde
+                facere numquam repellendus, illo dolorem eaque quibusdam
+                adipisci consequatur corporis sequi officiis in est odit quaerat
+                voluptatem alias!
+              </p>
+              <div class="card_buttons">
+                <a href="/"><img src="/icons/eye-plus-outline.svg" /></a>
+                <a href="/"><img src="/icons/github.svg" /></a>
+                <a href="/"><img src="/icons/share-variant-outline.svg" /></a>
+              </div>
+            </div>
+          </div>
+          <div class="right-info">
+            <div class="announcements">
+              <div>
+                <p class="title">Site Maintenance</p>
+                <p class="content">
+                  Lorem ipsum dolor sit Lorem ipsum dolor sit amet consectetur
+                  adipisicing elit. Magni, in?
+                </p>
+              </div>
+              <div>
+                <p class="title">Community Share Day</p>
+                <p class="content">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Veniam maiores quos ab fugit.
+                </p>
+              </div>
+              <div>
+                <p class="title">Updated Privacy Policy</p>
+                <p class="content">
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                  Delectus hic iste libero expedita!
+                </p>
+              </div>
+            </div>
+            <div class="trending">
+              <div class="trending__text">
+                <p>Trending</p>
+              </div>
+              <div class="trending__card">
+                <img src="trending1.jpg" alt="Picture of a dog" />
+                <div class="trending__card__text">
+                  <p class="trending__name">@tegan</p>
+                  <p class="trending__desc">World peace builder</p>
+                </div>
+              </div>
+              <div class="trending__card">
+                <img src="trending2.jpg" alt="Picture of a dog" />
+                <div class="trending__card__text">
+                  <p class="trending__name">@kendall</p>
+                  <p class="trending__desc">Super cool project</p>
+                </div>
+              </div>
+              <div class="trending__card">
+                <img src="trending3.jpg" alt="Picture of a dog" />
+                <div class="trending__card__text">
+                  <p class="trending__name">@jason</p>
+                  <p class="trending__desc">Life changing app</p>
+                </div>
+              </div>
+              <div class="trending__card">
+                <img src="trending4.jpg" alt="Picture of a dog" />
+                <div class="trending__card__text">
+                  <p class="trending__name">@shiobhan</p>
+                  <p class="trending__desc">No traffic maker</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
 </html>
